@@ -1,5 +1,10 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Served from https://<user>.github.io/prelviagroup/, so assets need this base path.
-export default defineConfig({ base: '/prelviagroup/', plugins: [react()] });
+// BASE_PATH is "/prelviagroup/" for GitHub Pages (set in the deploy workflow);
+// everywhere else (Replit, Netlify, custom domain) the site is served from "/".
+export default defineConfig({
+  base: process.env.BASE_PATH || '/',
+  plugins: [react()],
+  server: { host: '0.0.0.0', port: 5173, allowedHosts: true },
+});
