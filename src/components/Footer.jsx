@@ -33,7 +33,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer__legal">
-        © {new Date().getFullYear()} Prelvia Group. All rights reserved.
+        <span>© {new Date().getFullYear()} Prelvia Group. All rights reserved.</span>
+        <a className="footer__staff" href={`${import.meta.env.BASE_URL}portal/`}>Staff Login</a>
       </div>
     </footer>
   );

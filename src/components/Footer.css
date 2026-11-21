@@ -11,5 +11,7 @@
   border: 1px solid rgba(255,255,255,.25); border-radius: 50%; color: #fff; transition: .2s;
 }
 .footer__social a:hover { background: #fff; color: var(--navy-deep); }
+.footer__legal { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.footer__staff:hover { color: #fff; }
 .footer__legal { border-top: 1px solid rgba(255,255,255,.12); padding-block: 22px; font-size: .85rem; }
 @media (max-width: 760px) { .footer__grid { grid-template-columns: 1fr; gap: 32px; } }

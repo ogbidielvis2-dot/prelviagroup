@@ -1,0 +1,15 @@
+run = "npm run dev"
+entrypoint = "src/App.jsx"
+modules = ["nodejs-22"]
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+
+[deployment]
+build = ["npm", "run", "build"]
+publicDir = "dist"
+deploymentTarget = "static"
