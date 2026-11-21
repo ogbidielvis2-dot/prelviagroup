@@ -1,0 +1,4 @@
+.vision__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); }
+.vision__block { padding-top: 28px; border-top: 3px solid var(--blue); }
+.vision__block p { margin: 20px 0 0; font-size: 1.15rem; line-height: 1.7; max-width: 520px; }
+@media (max-width: 760px) { .vision__grid { grid-template-columns: 1fr; gap: 48px; } }
