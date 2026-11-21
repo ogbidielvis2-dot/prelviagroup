@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home" className="hero" aria-labelledby="hero-title">
       <div className="hero__media">
         <img
-          src="/images/hero.jpg"
+          src={`${import.meta.env.BASE_URL}images/hero.jpg`}
           alt="Diverse team of African professionals standing together in front of a modern office building"
           width="792" height="401" fetchPriority="high"
         />
